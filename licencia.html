@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Licencia de Conduccion</title>
+</head>
+
+<body>
+
+</body>
+<script>
+    function saltarLinea() {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var edad = parseInt(prompt("¿Cuál es tu edad?"));
+
+    if (edad >= 18) {
+        var tieneLicencia = prompt("¿Tienes licencia? Responde S o N");
+        if (tieneLicencia == "S" || tieneLicencia == "si" || tieneLicencia == "s") {
+            imprimir("Tienes la edad y tienes licencia puedes seguir conduciendo");
+        } else {
+            imprimir("Tienes la edad pero no la licencia para conducir");
+        }
+    } else {
+        imprimir("No tienes la mayoria de edad, por lo tanto no tienes licencia de conducir");
+    }
+    //////
+    //Solucion Profe
+    /*
+    if (edad >= 18 && tieneLicencia == "s") {
+        imprimir("Puedes manejar");
+    } else {
+        imprimir("No puedes manejar");
+    }*/
+</script>
+
+</html>
